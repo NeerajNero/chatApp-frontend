@@ -1,0 +1,21 @@
+.loginPage {
+  display: flex;
+  justify-content: space-evenly ;
+}
+.container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+body {
+  margin: none;
+}
+.verticalAlign {
+  display: flex;
+  flex-direction: column;
+}
+.loginAndRegisterButtonMargin {
+  margin: 10px
+}
