@@ -11,6 +11,7 @@
 }
 body {
   margin: none;
+  background-color: ghostwhite;
 }
 .verticalAlign {
   display: flex;
@@ -19,3 +20,25 @@ body {
 .loginAndRegisterButtonMargin {
   margin: 10px
 }
+.loginHeading {
+  border: 2px solid gray;
+  margin-inline: 30%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border: 5px solid;
+    border-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    ) 1;
+    background-color: black; /* Optional: To highlight the text */
+    text-align: center;
+    border-radius: 10px; /* Optional: Rounded corners */
+  }

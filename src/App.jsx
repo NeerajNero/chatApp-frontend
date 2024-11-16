@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import LoginAndRegister from "./components/loginAndRegister"
 import ChatPage from "./components/chatPage"
+import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
 
   return (

@@ -40,7 +40,7 @@ const LoginAndRegister = () => {
     }
     return(
         <>
-    <h1 style={{textAlign: "center"}}>Welcome to our Chat App</h1>
+    <h1 className="loginHeading" style={{textAlign: "center"}}>Welcome to our Chat App</h1>
         <section className="loginPage container">
             <div className="register">
                 <p>New User? Register Here.</p>
@@ -51,7 +51,7 @@ const LoginAndRegister = () => {
                 <input id="userName" value={rUserName} onChange={(e) => rSetUserName(e.target.value)}/>
                 <label htmlFor="password">Password: </label>
                 <input type="password" id="password" value={rPassword} onChange={(e) => rSetPassword(e.target.value)}/>
-                <button className="loginAndRegisterButtonMargin">Register</button>
+                <button className="loginAndRegisterButtonMargin btn btn-primary">Register</button>
                 </form>
             </div>
             <div className="login">
@@ -61,7 +61,7 @@ const LoginAndRegister = () => {
                 <input id="userNamel" value={lUserName} onChange={(e) => lSetUserName(e.target.value)}/>
                 <label htmlFor="passwordl">Password: </label>
                 <input type="password" id="passwordl" value={lPassword} onChange={(e) => lSetPassword(e.target.value)}/>
-                <button className="loginAndRegisterButtonMargin">Login</button>
+                <button className="loginAndRegisterButtonMargin btn btn-primary">Login</button>
                 </form>
             </div>
         </section>
