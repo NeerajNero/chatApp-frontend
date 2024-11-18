@@ -16,10 +16,12 @@ const ChatPage = () => {
     }, [dispatch])
 
     useEffect(() => {
-
+        if (!token) {
+            console.error('No access token available. User not authenticated.');
+        }
         console.log(token)
 
-        socketRef.current = io('http://localhost:3000', {withCredentials: true, auth: {access_token: token}})
+        socketRef.current = io('https://chatapp-backend-i30i.onrender.com', {withCredentials: true, auth: {access_token: token}})
 
     socketRef.current.on('connect', () => {
         console.log("user connected successfully", socketRef.current.id)

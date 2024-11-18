@@ -7,16 +7,16 @@ const initialState = {
     authentication: []
 }
 export const userRegistration = createAsyncThunk('register', async({user}) => {
-    const response = await axios.post('http://localhost:3000/user/register', user)
+    const response = await axios.post('https://chatapp-backend-i30i.onrender.com/user/register', user)
     return response.data
 }) 
 
 export const userLogin = createAsyncThunk('login', async({user}) => {
-    const response = await axios.post('http://localhost:3000/user/login', user, {withCredentials: true})
+    const response = await axios.post('https://chatapp-backend-i30i.onrender.com/user/login', user, {withCredentials: true})
     return response.data
 }) 
 export const privateRoute = createAsyncThunk('privateRoute', async() => {
-    const response = await axios.get('http://localhost:3000/app/chat', {withCredentials: true})
+    const response = await axios.get('https://chatapp-backend-i30i.onrender.com/app/chat', {withCredentials: true})
     console.log(response.data)
     return response.data
 })
